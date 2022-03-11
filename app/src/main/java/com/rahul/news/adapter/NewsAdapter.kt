@@ -26,7 +26,7 @@ class NewsAdapter(private val context:Context, private val newsList:List<Article
             tvHeading.text = news.title
             tvSource.text = news.source.name
             Glide.with(context).load(news.urlToImage)
-                .placeholder(R.drawable.ic_baseline_image_not_supported_24)
+                .placeholder(R.drawable.ic_baseline_image)
                 .into(ivNewsImage)
         }
     }
