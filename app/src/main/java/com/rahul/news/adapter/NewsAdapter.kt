@@ -1,6 +1,7 @@
 package com.rahul.news.adapter
 
 import android.content.Context
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -9,6 +10,7 @@ import com.bumptech.glide.Glide
 import com.rahul.news.R
 import com.rahul.news.databinding.NewsItemLayoutBinding
 import com.rahul.news.model.local.Article
+import com.rahul.news.ui.DetailsActivity
 
 class NewsAdapter(private val context:Context, private val newsList:List<Article>)
     :RecyclerView.Adapter<NewsAdapter.NewsViewHolder>() {
@@ -28,6 +30,13 @@ class NewsAdapter(private val context:Context, private val newsList:List<Article
             Glide.with(context).load(news.urlToImage)
                 .placeholder(R.drawable.ic_baseline_image)
                 .into(ivNewsImage)
+
+          holder.newsItemLayoutBinding.card.setOnClickListener {
+            val intent =Intent(context,DetailsActivity::class.java)
+              intent.putExtra("URL", news.url)
+              context.startActivity(intent)
+          }
+
         }
     }
 
