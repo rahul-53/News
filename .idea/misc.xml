@@ -4,10 +4,10 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/News/app/src/main/res/layout/activity_details.xml" value="0.209375" />
-        <entry key="..\:/News/app/src/main/res/layout/activity_main.xml" value="0.209375" />
+        <entry key="..\:/News/app/src/main/res/layout/activity_main.xml" value="0.10182370820668693" />
         <entry key="..\:/News/app/src/main/res/layout/fragment_news.xml" value="0.209375" />
         <entry key="..\:/News/app/src/main/res/layout/new_item_layout.xml" value="0.1" />
-        <entry key="..\:/News/app/src/main/res/layout/news_item_layout.xml" value="0.209375" />
+        <entry key="..\:/News/app/src/main/res/layout/news_item_layout.xml" value="0.1" />
       </map>
     </option>
   </component>
